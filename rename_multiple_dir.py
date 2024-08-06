@@ -14,7 +14,7 @@ def rename_tests_in_file(file_path):
 
     new_content = []
     for line in content:
-        # Check if the line contains 'tests:'
+        # Check if the line contains 'tests:' 
         if 'tests:' in line:
             # Replace 'tests:' with 'data_tests:' while preserving indentation
             new_line = re.sub(r'^(\s*)tests:', r'\1data_tests:', line)
