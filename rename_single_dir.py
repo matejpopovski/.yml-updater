@@ -16,7 +16,7 @@ def rename_tests_in_file(file_path):
             new_line = re.sub(r'^(\s*)tests:', r'\1data_tests:', line)
             new_content.append(new_line)
         else:
-            new_content.append(line
+            new_content.append(line)
 
     with open(file_path, 'w') as file:
         file.writelines(new_content)
